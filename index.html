@@ -1,0 +1,35 @@
+<head>
+	<title>Gestion des commandes</title>
+</head>
+<body>
+	<h1>Gestion des commandes</h1>
+
+	<form action="traitement_commande.php" method="post">
+		
+		<label for="id_commande">ID de la commande à chercher :</label>
+		<input type="text" name="id_commande"><input type="submit" name="chercher" value="Chercher la commande"><br>
+		<label for="nom_client">Nom du client :</label>
+		<select name="nom_client">
+			<option value="client1">Client 1</option>
+			<option value="client2">Client 2</option>
+			<option value="client3">Client 3</option>
+		</select><br>
+		<label for="article_commande">Article commandé :</label>
+		<select name="article_commande">
+			<option value="article1">Article 1</option>
+			<option value="article2">Article 2</option>
+			<option value="article3">Article 3</option>
+		</select><br>
+		<label for="quantite_commande">Quantité commandée :</label>
+		<input type="text" name="quantite_commande"><br>
+		<label for="prix_unitaire">Prix unitaire :</label>
+		<input type="text" name="prix_unitaire"><br>
+		<input type="submit" name="ajouter" value="Ajouter la commande">
+		<input type="submit" name="modifier" value="Modifier la commande">
+		<input type="submit" name="supprimer" value="Supprimer la commande">
+			
+		<input type="submit" name="afficher" value="Afficher toutes les commandes">
+	</form>
+
+</body>
+</html>
